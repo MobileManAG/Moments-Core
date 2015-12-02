@@ -1,0 +1,206 @@
+<!--
+  Copyright 2015 MobileMan GmbH
+  www.mobileman.com
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<head>
+<style type="text/css">
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  font-style: semibold;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
+}
+
+body {
+	background-color: #FAF5F2;	
+}
+
+h3 {
+    font-size:20px;
+    color: #000;
+}
+
+a {
+	color: #65b7df;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #65b7df;
+	text-decoration: underline;
+}
+
+.uplink {
+	color: #666;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.uplink:hover {
+	color: #333;
+}
+
+.btn-sm, .btn-xs {
+
+    border-radius: 3px;
+    border-style:solid;
+    border-width:1px;
+    background-color:rgb(250, 245, 242);
+	border-color: rgb(177, 167, 167);
+	font-size: 14px;
+	line-height:18px;
+	color: #3B2422;
+	font-family: 'Source Sans Pro Semibold';
+    font-style: bold;
+    font-weight: 600;	
+	width: 190px;
+	height:25px;
+}
+
+.content {
+	margin: auto;
+	background-color: #FFFFFF;
+	width: 50%;
+	min-width: 300px;
+	border: 1px solid #ccc;
+	white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers */
+	word-wrap: break-word;      /* IE 5+ */
+	word-break: normal;
+}
+
+.title {
+	color: #3B2422;
+	font-family: 'Source Sans Pro Semibold', Helvetica, Tahoma, sans-serif;
+    font-style: bold;
+    font-weight: 600;	
+	font-size: 17px;
+	line-height:18px;	
+}
+
+.subtitle {
+	color: #3B2422;
+	font-family: 'Source Sans Pro Semibold', Helvetica, Tahoma, sans-serif;
+    font-style: bold;
+    font-weight: 600;	
+	font-size: 14px;
+	line-height:18px;	
+}
+
+.normalText {
+	font-size: 14px;
+	line-height:18px;
+	color: #3B2422;
+	font-family: 'Source Sans Pro', Helvetica, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.copyrightText {
+	font-family: 'Source Sans Pro Semibold', Helvetica, Tahoma, sans-serif;
+    font-style: ;
+    font-weight: 400;	
+	font-size: 9px;
+	line-height:10px;
+	color:rgb(137, 124, 122);	
+}
+
+.footer {
+	font-size:20px;
+	padding: 0px;
+	width: 50%;
+	min-width: 300px;
+}
+
+.tableBackground {
+	background-color: #D24E43;
+	height:50px;
+}
+
+.logo {
+	margin-left:30px;
+	margin-top:5px;
+	margin-bottom:5px;
+	background-image: url('https://${dns_server_name}/assets/images/logo_email.png');
+	background-repeat:no-repeat;
+	background-size: 140px 40px;
+	width: 140px;
+	height: 40px;
+}
+
+.social-Icons {
+	padding-right:10px;
+	float: left;
+}
+.socialIcon {
+	padding-top:10px;
+}
+
+.socialIconTwitter {
+    background-image: url('https://${dns_server_name}/assets/images/social/twitter-32.png');
+    background-repeat:no-repeat;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.socialIconFacebook {
+    background-image: url('https://${dns_server_name}/assets/images/social/facebook-32.png');
+    background-repeat:no-repeat;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.socialIconVimeo {
+    background-image: url('https://${dns_server_name}/assets/images/social/vimeo-32.png');
+    background-repeat:no-repeat;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    .logo {
+        background-image: url('https://${dns_server_name}/assets/images/logo_email@2x.png');
+    }
+    
+    .socialIconTwitter {
+        background-image: url('https://${dns_server_name}/assets/images/social/twitter-32@2x.png');
+    }
+    
+    .socialIconFacebook {
+        background-image: url('https://${dns_server_name}/assets/images/social/facebook-32@2x.png');
+    }
+    
+    .socialIconVimeo {
+        background-image: url('https://${dns_server_name}/assets/images/social/vimeo-32@2x.png');
+    }
+}
+</style>
+</head>
